@@ -5,9 +5,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-        <CategoriesContainer />
+        <CategoriesContainer /> 
     </div>
   );
 }
 
 export default App;
+
+
+// this is rending the categoriesContainer page (which is the a view)
