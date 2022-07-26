@@ -8,13 +8,17 @@ class MealsContainer extends Component {
 
     }
 
-    componentDidUpdate(prevState) { //this checks for previous state of something you are tracking 
+    componentDidUpdate(prevState) { //this checks for previous state of something you are tracking //want todo it on change not mount
         if (prevState.category !== this.props.category){
             let url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${this.props.category}`
             fetch(url)
             .then(res => res.json())
             .then(data =>{
                 console.log(data.meals)
+                this.setState({
+                    meals: data.meals, // updating state using this 
+                    category: this.props.category //updating state using this //do we need this?
+                })
             })
         }
     }
@@ -26,8 +30,7 @@ class MealsContainer extends Component {
 
     return (
       <div>
-        <h3>I am a meals container </h3>
-        {meals}
+        {this.props.category !== "" ? meals : <h3> Please select a Category</h3>}
       </div>
     )
   }
