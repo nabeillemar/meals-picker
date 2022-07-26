@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Category from '../components/Category' //importing the categories
+import MealsContainer from './MealsContainer'
 
 const URL = 'https://www.themealdb.com/api/json/v1/1/categories.php'
 
@@ -39,6 +40,7 @@ class CategoriesContainer extends Component {
           {categories}
           <hr/>
           <h3>The {this.state.category} Meals</h3>
+          <MealsContainer category={this.state.category}/>
       </div>
     )
   }
