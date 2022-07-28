@@ -30,6 +30,14 @@ const Navigation = () => (
                 background: 'darkblue'
             }}
         >Categories</NavLink>
+        <NavLink 
+            to="/ingredients"
+            exact
+            style={link}
+            activeStyle={{
+                background: 'darkblue'
+            }}
+        >Ingredients</NavLink>
     </div>
 )
 
