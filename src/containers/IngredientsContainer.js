@@ -7,7 +7,7 @@ class IngredientsContainer extends Component {
   render() {
     return (
       <div>
-        IngredientsContainer
+        <h2> The Meals with {this.props.match.params.id}</h2>
       </div>
     )
   }
