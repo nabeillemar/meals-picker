@@ -1,10 +1,12 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
-const Ingredient = () => {
+const Ingredient = (props) => {
   return (
     <div>
-        Ingredient
-
+        <Link to={`/ingreidents/${props.ingredient.split(" ").join("_")}`}>
+          
+          </Link>
     </div>
   )
 }
