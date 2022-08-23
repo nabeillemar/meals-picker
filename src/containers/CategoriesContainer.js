@@ -5,7 +5,7 @@ import MealsContainer from './MealsContainer'
 const URL = 'https://www.themealdb.com/api/json/v1/1/categories.php'
 
 class CategoriesContainer extends Component {
-    state = {             // state is a constrcutor 
+    state = {             // state is a Constructor 
         categories: [],
         category: "" //setting state of category blank
     } 

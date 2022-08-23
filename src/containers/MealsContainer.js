@@ -4,7 +4,7 @@ import Meal from '../components/Meal'
 class MealsContainer extends Component {
     state = {
         meals: [],
-        category: ""
+        searchTerm: ""
 
     }
 
