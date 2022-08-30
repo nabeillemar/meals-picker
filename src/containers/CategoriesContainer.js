@@ -53,3 +53,4 @@ export default CategoriesContainer
 // this is a view page it is importing data and structure from a component Category.js
 // without hooks to give a component local state it has to be written as a class instead of arrow function etc 
 // you need to initalize state and maintain it 
+// need to review
